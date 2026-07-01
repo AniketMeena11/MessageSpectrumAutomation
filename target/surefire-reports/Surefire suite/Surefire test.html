@@ -1,0 +1,442 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 01 07:28:22 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>346 seconds (346458 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.messagespectrum.tests.SecretLinkTest.TC_006_BodyAreaAcceptsSpecialCharsAndEmoji()'><b>TC_006_BodyAreaAcceptsSpecialCharsAndEmoji</b><br>Test class: com.messagespectrum.tests.SecretLinkTest<br>Test method: TC_006 | Verify Body area accepts special characters and emoji without encoding error</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: ChromeDriver only supports characters in the BMP
+  (Session info: chrome=149.0.7827.197)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4faacd9aa59fe2fc6b8e921333fdb6c, sendKeysToElement {id=f.7A44141964B6C7806DAD314ED9558080.d.35F64146357B74EE404F380E801293C3.e.13, value=[Ljava.lang.CharSequence;@13ed066e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\anike\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63699}, goog:processID: 12044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63699/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f4faacd9aa59fe2fc6b8e921333fdb6c)] -&gt; id: ctl00_ContentPlaceHolder1_txtSecretText]
+Session ID: f4faacd9aa59fe2fc6b8e921333fdb6c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+	at com.messagespectrum.pages.SecretLinkPage.enterBodyText(SecretLinkPage.java:136)
+	at com.messagespectrum.tests.SecretLinkTest.TC_006_BodyAreaAcceptsSpecialCharsAndEmoji(SecretLinkTest.java:155)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1493657028", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1493657028'><pre>org.openqa.selenium.WebDriverException: unknown error: ChromeDriver only supports characters in the BMP
+  (Session info: chrome=149.0.7827.197)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4faacd9aa59fe2fc6b8e921333fdb6c, sendKeysToElement {id=f.7A44141964B6C7806DAD314ED9558080.d.35F64146357B74EE404F380E801293C3.e.13, value=[Ljava.lang.CharSequence;@13ed066e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\anike\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63699}, goog:processID: 12044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63699/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f4faacd9aa59fe2fc6b8e921333fdb6c)] -&gt; id: ctl00_ContentPlaceHolder1_txtSecretText]
+Session ID: f4faacd9aa59fe2fc6b8e921333fdb6c
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+	at com.messagespectrum.pages.SecretLinkPage.enterBodyText(SecretLinkPage.java:136)
+	at com.messagespectrum.tests.SecretLinkTest.TC_006_BodyAreaAcceptsSpecialCharsAndEmoji(SecretLinkTest.java:155)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.messagespectrum.tests.SecretLinkTest@19bb07ed</td></tr>
+<tr>
+<td title='com.messagespectrum.tests.SecretLinkTest.TC_017_WarningMessageWhenMultipleViewsUnchecked()'><b>TC_017_WarningMessageWhenMultipleViewsUnchecked</b><br>Test class: com.messagespectrum.tests.SecretLinkTest<br>Test method: TC_017 | Verify message '* You able to use this link once.' shown when Multiple Views unchecked</td>
+<td><div><pre>java.lang.AssertionError: Warning message should be exactly &apos;* You able to use this link once.&apos; Actual: * You will be able to use this link only once. expected [* You able to use this link once.] but found [* You will be able to use this link only once.]
+	at com.messagespectrum.tests.SecretLinkTest.TC_017_WarningMessageWhenMultipleViewsUnchecked(SecretLinkTest.java:638)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1170482099", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1170482099'><pre>java.lang.AssertionError: Warning message should be exactly &apos;* You able to use this link once.&apos; Actual: * You will be able to use this link only once. expected [* You able to use this link once.] but found [* You will be able to use this link only once.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.messagespectrum.tests.SecretLinkTest.TC_017_WarningMessageWhenMultipleViewsUnchecked(SecretLinkTest.java:638)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.messagespectrum.tests.SecretLinkTest@19bb07ed</td></tr>
+<tr>
+<td title='com.messagespectrum.tests.SecretLinkTest.TC_004_AutoGeneratedPasswordWorksWithLinkFlow()'><b>TC_004_AutoGeneratedPasswordWorksWithLinkFlow</b><br>Test class: com.messagespectrum.tests.SecretLinkTest<br>Test method: TC_004 | Verify auto-generated password works correctly with Generate Link with Password flow</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;submit&quot; name=&quot;ctl00$ContentPlaceHolder1$btnGenerateSecretLink&quot; value=&quot;Create Secret Link*&quot; onclick=&quot;return ValidateSecretText();&quot; id=&quot;ctl00_ContentPlaceHolder1_btnGenerateSecretLink&quot; class=&quot;Button&quot; style=&quot;height:50px;width:99%;font-size: 1.2em !important;&quot;&gt; is not clickable at point (869, 506). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=149.0.7827.197)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7680c95977cfd7762e689631c106d9e2, clickElement {id=f.81BC1DA3F6A0CAD02EF7418B61CF6809.d.0F914B998CAE2DAB35D4F5E41EADF2E9.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\anike\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54348}, goog:processID: 24156, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54348/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7680c95977cfd7762e689631c106d9e2)] -&gt; id: ctl00_ContentPlaceHolder1_btnGenerateSecretLink]
+Session ID: 7680c95977cfd7762e689631c106d9e2
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.messagespectrum.pages.SecretLinkPage.clickGenerateSecretLink(SecretLinkPage.java:281)
+	at com.messagespectrum.tests.SecretLinkTest.TC_004_AutoGeneratedPasswordWorksWithLinkFlow(SecretLinkTest.java:455)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace164052991", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace164052991'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;submit&quot; name=&quot;ctl00$ContentPlaceHolder1$btnGenerateSecretLink&quot; value=&quot;Create Secret Link*&quot; onclick=&quot;return ValidateSecretText();&quot; id=&quot;ctl00_ContentPlaceHolder1_btnGenerateSecretLink&quot; class=&quot;Button&quot; style=&quot;height:50px;width:99%;font-size: 1.2em !important;&quot;&gt; is not clickable at point (869, 506). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=149.0.7827.197)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7680c95977cfd7762e689631c106d9e2, clickElement {id=f.81BC1DA3F6A0CAD02EF7418B61CF6809.d.0F914B998CAE2DAB35D4F5E41EADF2E9.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\anike\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54348}, goog:processID: 24156, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54348/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7680c95977cfd7762e689631c106d9e2)] -&gt; id: ctl00_ContentPlaceHolder1_btnGenerateSecretLink]
+Session ID: 7680c95977cfd7762e689631c106d9e2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.messagespectrum.pages.SecretLinkPage.clickGenerateSecretLink(SecretLinkPage.java:281)
+	at com.messagespectrum.tests.SecretLinkTest.TC_004_AutoGeneratedPasswordWorksWithLinkFlow(SecretLinkTest.java:455)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>6</td>
+<td>com.messagespectrum.tests.SecretLinkTest@19bb07ed</td></tr>
+<tr>
+<td title='com.messagespectrum.tests.SecretLinkTest.TC_011_CustomExpiryZeroShowsError()'><b>TC_011_CustomExpiryZeroShowsError</b><br>Test class: com.messagespectrum.tests.SecretLinkTest<br>Test method: TC_011 | Verify entering '0' in custom days box shows error 'Expiry should be greater than 0'</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;submit&quot; name=&quot;ctl00$ContentPlaceHolder1$btnGenerateSecretLink&quot; value=&quot;Create Secret Link*&quot; onclick=&quot;return ValidateSecretText();&quot; id=&quot;ctl00_ContentPlaceHolder1_btnGenerateSecretLink&quot; class=&quot;Button&quot; style=&quot;height:50px;width:99%;font-size: 1.2em !important;&quot;&gt; is not clickable at point (869, 506). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=149.0.7827.197)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e2da35403e7ded7b775491c181d724e, clickElement {id=f.C3007322BF6F7461D33F5933DB12B3F7.d.E7752539BC597DE146F858420A7339E3.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\anike\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50140}, goog:processID: 10004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50140/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8e2da35403e7ded7b775491c181d724e)] -&gt; id: ctl00_ContentPlaceHolder1_btnGenerateSecretLink]
+Session ID: 8e2da35403e7ded7b775491c181d724e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.messagespectrum.pages.SecretLinkPage.clickGenerateSecretLink(SecretLinkPage.java:281)
+	at com.messagespectrum.tests.SecretLinkTest.TC_011_CustomExpiryZeroShowsError(SecretLinkTest.java:582)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace366370767", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace366370767'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;submit&quot; name=&quot;ctl00$ContentPlaceHolder1$btnGenerateSecretLink&quot; value=&quot;Create Secret Link*&quot; onclick=&quot;return ValidateSecretText();&quot; id=&quot;ctl00_ContentPlaceHolder1_btnGenerateSecretLink&quot; class=&quot;Button&quot; style=&quot;height:50px;width:99%;font-size: 1.2em !important;&quot;&gt; is not clickable at point (869, 506). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=149.0.7827.197)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e2da35403e7ded7b775491c181d724e, clickElement {id=f.C3007322BF6F7461D33F5933DB12B3F7.d.E7752539BC597DE146F858420A7339E3.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\anike\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50140}, goog:processID: 10004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50140/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8e2da35403e7ded7b775491c181d724e)] -&gt; id: ctl00_ContentPlaceHolder1_btnGenerateSecretLink]
+Session ID: 8e2da35403e7ded7b775491c181d724e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.messagespectrum.pages.SecretLinkPage.clickGenerateSecretLink(SecretLinkPage.java:281)
+	at com.messagespectrum.tests.SecretLinkTest.TC_011_CustomExpiryZeroShowsError(SecretLinkTest.java:582)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>6</td>
+<td>com.messagespectrum.tests.SecretLinkTest@19bb07ed</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.messagespectrum.tests.SecretLinkTest.TC_010_SelectCustomShowsInputBox()'><b>TC_010_SelectCustomShowsInputBox</b><br>Test class: com.messagespectrum.tests.SecretLinkTest<br>Test method: TC_010 | Verify selecting 'Custom' shows custom days input and accepts only 1-99</td>
+<td></td>
+<td>1</td>
+<td>com.messagespectrum.tests.SecretLinkTest@19bb07ed</td></tr>
+<tr>
+<td title='com.messagespectrum.tests.SecretLinkTest.TC_001_GeneratePassword()'><b>TC_001_GeneratePassword</b><br>Test class: com.messagespectrum.tests.SecretLinkTest<br>Test method: TC_001 | Verify clicking Generate Password fills the body area with a password</td>
+<td></td>
+<td>1</td>
+<td>com.messagespectrum.tests.SecretLinkTest@19bb07ed</td></tr>
+<tr>
+<td title='com.messagespectrum.tests.SecretLinkTest.TC_018_WarningMessageWhenMultipleViewsChecked()'><b>TC_018_WarningMessageWhenMultipleViewsChecked</b><br>Test class: com.messagespectrum.tests.SecretLinkTest<br>Test method: TC_018 | Verify message '* You will be able to use this link multiple times until expiry duration.' shown when Multiple Views checked</td>
+<td></td>
+<td>0</td>
+<td>com.messagespectrum.tests.SecretLinkTest@19bb07ed</td></tr>
+<tr>
+<td title='com.messagespectrum.tests.SecretLinkTest.TC_005_BodyAreaAcceptsText()'><b>TC_005_BodyAreaAcceptsText</b><br>Test class: com.messagespectrum.tests.SecretLinkTest<br>Test method: TC_005 | Verify user can type secret content into Body area and it is visible</td>
+<td></td>
+<td>0</td>
+<td>com.messagespectrum.tests.SecretLinkTest@19bb07ed</td></tr>
+<tr>
+<td title='com.messagespectrum.tests.SecretLinkTest.TC_002_EachClickGeneratesDifferentPassword()'><b>TC_002_EachClickGeneratesDifferentPassword</b><br>Test class: com.messagespectrum.tests.SecretLinkTest<br>Test method: TC_002 | Verify every click on Generate Password produces a unique password</td>
+<td></td>
+<td>21</td>
+<td>com.messagespectrum.tests.SecretLinkTest@19bb07ed</td></tr>
+<tr>
+<td title='com.messagespectrum.tests.SecretLinkTest.TC_013_DefaultExpiryIsPreSelected()'><b>TC_013_DefaultExpiryIsPreSelected</b><br>Test class: com.messagespectrum.tests.SecretLinkTest<br>Test method: TC_013 | Verify 'Expires In' dropdown has '7' days pre-selected by default on page load</td>
+<td></td>
+<td>0</td>
+<td>com.messagespectrum.tests.SecretLinkTest@19bb07ed</td></tr>
+<tr>
+<td title='com.messagespectrum.tests.SecretLinkTest.TC_008_BodyAreaHandlesLargeText()'><b>TC_008_BodyAreaHandlesLargeText</b><br>Test class: com.messagespectrum.tests.SecretLinkTest<br>Test method: TC_008 | Verify Body area handles very large text (10,000+ chars) without crash or freeze</td>
+<td></td>
+<td>22</td>
+<td>com.messagespectrum.tests.SecretLinkTest@19bb07ed</td></tr>
+<tr>
+<td title='com.messagespectrum.tests.SecretLinkTest.TC_009_ExpiryDropdownContainsAllOptions()'><b>TC_009_ExpiryDropdownContainsAllOptions</b><br>Test class: com.messagespectrum.tests.SecretLinkTest<br>Test method: TC_009 | Verify 'Expires In' dropdown contains all expected time options</td>
+<td></td>
+<td>0</td>
+<td>com.messagespectrum.tests.SecretLinkTest@19bb07ed</td></tr>
+<tr>
+<td title='com.messagespectrum.tests.SecretLinkTest.TC_003_GeneratedPasswordMeetsSecurityStandards()'><b>TC_003_GeneratedPasswordMeetsSecurityStandards</b><br>Test class: com.messagespectrum.tests.SecretLinkTest<br>Test method: TC_003 | Verify auto-generated password meets basic security standards</td>
+<td></td>
+<td>0</td>
+<td>com.messagespectrum.tests.SecretLinkTest@19bb07ed</td></tr>
+</table><p>
+</body>
+</html>

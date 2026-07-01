@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="9" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-07-01T07:28:22 IST" name="Surefire suite" finished-at="2026-07-01T07:34:08 IST" duration-ms="346458">
+    <groups>
+    </groups>
+    <test started-at="2026-07-01T07:28:22 IST" name="Surefire test" finished-at="2026-07-01T07:34:08 IST" duration-ms="346458">
+      <class name="com.messagespectrum.base.BaseTest">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.messagespectrum.base.BaseTest@63021689]" started-at="2026-07-01T07:28:21 IST" name="setUpReport" finished-at="2026-07-01T07:28:22 IST" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.messagespectrum.base.BaseTest@63021689]" started-at="2026-07-01T07:34:08 IST" name="flushReport" finished-at="2026-07-01T07:34:09 IST" duration-ms="399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- com.messagespectrum.base.BaseTest -->
+      <class name="com.messagespectrum.tests.SecretLinkTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:28:22 IST" name="setUp" finished-at="2026-07-01T07:28:53 IST" duration-ms="30863" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage(java.lang.reflect.Method)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:28:53 IST" name="initPage" finished-at="2026-07-01T07:28:53 IST" duration-ms="101" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.messagespectrum.tests.SecretLinkTest.TC_001_GeneratePassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC_001_GeneratePassword()[pri:1, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:28:53 IST" name="TC_001_GeneratePassword" description="TC_001 | Verify clicking Generate Password fills the body area with a password" finished-at="2026-07-01T07:28:54 IST" duration-ms="1082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_001_GeneratePassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:28:54 IST" name="tearDown" finished-at="2026-07-01T07:28:54 IST" duration-ms="299" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_001_GeneratePassword status=SUCCESS method=SecretLinkTest.TC_001_GeneratePassword()[pri:1, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:28:54 IST" name="setUp" finished-at="2026-07-01T07:28:56 IST" duration-ms="2122" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage(java.lang.reflect.Method)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:28:56 IST" name="initPage" finished-at="2026-07-01T07:28:56 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.messagespectrum.tests.SecretLinkTest.TC_002_EachClickGeneratesDifferentPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC_002_EachClickGeneratesDifferentPassword()[pri:2, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:28:56 IST" name="TC_002_EachClickGeneratesDifferentPassword" description="TC_002 | Verify every click on Generate Password produces a unique password" finished-at="2026-07-01T07:29:17 IST" duration-ms="21045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_002_EachClickGeneratesDifferentPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:29:17 IST" name="tearDown" finished-at="2026-07-01T07:29:18 IST" duration-ms="263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_002_EachClickGeneratesDifferentPassword status=SUCCESS method=SecretLinkTest.TC_002_EachClickGeneratesDifferentPassword()[pri:2, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:29:18 IST" name="setUp" finished-at="2026-07-01T07:29:37 IST" duration-ms="19748" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage(java.lang.reflect.Method)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:29:37 IST" name="initPage" finished-at="2026-07-01T07:29:37 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.messagespectrum.tests.SecretLinkTest.TC_003_GeneratedPasswordMeetsSecurityStandards()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC_003_GeneratedPasswordMeetsSecurityStandards()[pri:3, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:29:37 IST" name="TC_003_GeneratedPasswordMeetsSecurityStandards" description="TC_003 | Verify auto-generated password meets basic security standards" finished-at="2026-07-01T07:29:38 IST" duration-ms="917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_003_GeneratedPasswordMeetsSecurityStandards -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:29:38 IST" name="tearDown" finished-at="2026-07-01T07:29:38 IST" duration-ms="193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_003_GeneratedPasswordMeetsSecurityStandards status=SUCCESS method=SecretLinkTest.TC_003_GeneratedPasswordMeetsSecurityStandards()[pri:3, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:29:38 IST" name="setUp" finished-at="2026-07-01T07:30:01 IST" duration-ms="22341" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage(java.lang.reflect.Method)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:30:01 IST" name="initPage" finished-at="2026-07-01T07:30:01 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.messagespectrum.tests.SecretLinkTest.TC_004_AutoGeneratedPasswordWorksWithLinkFlow()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC_004_AutoGeneratedPasswordWorksWithLinkFlow()[pri:4, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:30:01 IST" name="TC_004_AutoGeneratedPasswordWorksWithLinkFlow" description="TC_004 | Verify auto-generated password works correctly with Generate Link with Password flow" finished-at="2026-07-01T07:30:07 IST" duration-ms="6328" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <input type="submit" name="ctl00$ContentPlaceHolder1$btnGenerateSecretLink" value="Create Secret Link*" onclick="return ValidateSecretText();" id="ctl00_ContentPlaceHolder1_btnGenerateSecretLink" class="Button" style="height:50px;width:99%;font-size: 1.2em !important;"> is not clickable at point (869, 506). Other element would receive the click: <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div>
+  (Session info: chrome=149.0.7827.197)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7680c95977cfd7762e689631c106d9e2, clickElement {id=f.81BC1DA3F6A0CAD02EF7418B61CF6809.d.0F914B998CAE2DAB35D4F5E41EADF2E9.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\anike\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54348}, goog:processID: 24156, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54348/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7680c95977cfd7762e689631c106d9e2)] -> id: ctl00_ContentPlaceHolder1_btnGenerateSecretLink]
+Session ID: 7680c95977cfd7762e689631c106d9e2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="submit" name="ctl00$ContentPlaceHolder1$btnGenerateSecretLink" value="Create Secret Link*" onclick="return ValidateSecretText();" id="ctl00_ContentPlaceHolder1_btnGenerateSecretLink" class="Button" style="height:50px;width:99%;font-size: 1.2em !important;"> is not clickable at point (869, 506). Other element would receive the click: <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div>
+  (Session info: chrome=149.0.7827.197)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7680c95977cfd7762e689631c106d9e2, clickElement {id=f.81BC1DA3F6A0CAD02EF7418B61CF6809.d.0F914B998CAE2DAB35D4F5E41EADF2E9.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\anike\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54348}, goog:processID: 24156, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54348/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7680c95977cfd7762e689631c106d9e2)] -> id: ctl00_ContentPlaceHolder1_btnGenerateSecretLink]
+Session ID: 7680c95977cfd7762e689631c106d9e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at com.messagespectrum.pages.SecretLinkPage.clickGenerateSecretLink(SecretLinkPage.java:281)
+at com.messagespectrum.tests.SecretLinkTest.TC_004_AutoGeneratedPasswordWorksWithLinkFlow(SecretLinkTest.java:455)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_004_AutoGeneratedPasswordWorksWithLinkFlow -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:30:07 IST" name="tearDown" finished-at="2026-07-01T07:30:09 IST" duration-ms="2088" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_004_AutoGeneratedPasswordWorksWithLinkFlow status=FAILURE method=SecretLinkTest.TC_004_AutoGeneratedPasswordWorksWithLinkFlow()[pri:4, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:30:09 IST" name="setUp" finished-at="2026-07-01T07:30:30 IST" duration-ms="21269" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage(java.lang.reflect.Method)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:30:30 IST" name="initPage" finished-at="2026-07-01T07:30:30 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.messagespectrum.tests.SecretLinkTest.TC_005_BodyAreaAcceptsText()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC_005_BodyAreaAcceptsText()[pri:5, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:30:30 IST" name="TC_005_BodyAreaAcceptsText" description="TC_005 | Verify user can type secret content into Body area and it is visible" finished-at="2026-07-01T07:30:31 IST" duration-ms="394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_005_BodyAreaAcceptsText -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:30:31 IST" name="tearDown" finished-at="2026-07-01T07:30:31 IST" duration-ms="202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_005_BodyAreaAcceptsText status=SUCCESS method=SecretLinkTest.TC_005_BodyAreaAcceptsText()[pri:5, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:30:31 IST" name="setUp" finished-at="2026-07-01T07:30:53 IST" duration-ms="21452" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage(java.lang.reflect.Method)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:30:53 IST" name="initPage" finished-at="2026-07-01T07:30:53 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.messagespectrum.tests.SecretLinkTest.TC_006_BodyAreaAcceptsSpecialCharsAndEmoji()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC_006_BodyAreaAcceptsSpecialCharsAndEmoji()[pri:6, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:30:53 IST" name="TC_006_BodyAreaAcceptsSpecialCharsAndEmoji" description="TC_006 | Verify Body area accepts special characters and emoji without encoding error" finished-at="2026-07-01T07:30:53 IST" duration-ms="292" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: ChromeDriver only supports characters in the BMP
+  (Session info: chrome=149.0.7827.197)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4faacd9aa59fe2fc6b8e921333fdb6c, sendKeysToElement {id=f.7A44141964B6C7806DAD314ED9558080.d.35F64146357B74EE404F380E801293C3.e.13, value=[Ljava.lang.CharSequence;@13ed066e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\anike\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63699}, goog:processID: 12044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63699/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f4faacd9aa59fe2fc6b8e921333fdb6c)] -> id: ctl00_ContentPlaceHolder1_txtSecretText]
+Session ID: f4faacd9aa59fe2fc6b8e921333fdb6c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: ChromeDriver only supports characters in the BMP
+  (Session info: chrome=149.0.7827.197)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4faacd9aa59fe2fc6b8e921333fdb6c, sendKeysToElement {id=f.7A44141964B6C7806DAD314ED9558080.d.35F64146357B74EE404F380E801293C3.e.13, value=[Ljava.lang.CharSequence;@13ed066e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\anike\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63699}, goog:processID: 12044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63699/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f4faacd9aa59fe2fc6b8e921333fdb6c)] -> id: ctl00_ContentPlaceHolder1_txtSecretText]
+Session ID: f4faacd9aa59fe2fc6b8e921333fdb6c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+at com.messagespectrum.pages.SecretLinkPage.enterBodyText(SecretLinkPage.java:136)
+at com.messagespectrum.tests.SecretLinkTest.TC_006_BodyAreaAcceptsSpecialCharsAndEmoji(SecretLinkTest.java:155)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_006_BodyAreaAcceptsSpecialCharsAndEmoji -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:30:53 IST" name="tearDown" finished-at="2026-07-01T07:30:53 IST" duration-ms="412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_006_BodyAreaAcceptsSpecialCharsAndEmoji status=FAILURE method=SecretLinkTest.TC_006_BodyAreaAcceptsSpecialCharsAndEmoji()[pri:6, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:30:53 IST" name="setUp" finished-at="2026-07-01T07:31:15 IST" duration-ms="21645" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage(java.lang.reflect.Method)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:31:15 IST" name="initPage" finished-at="2026-07-01T07:31:15 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.messagespectrum.tests.SecretLinkTest.TC_008_BodyAreaHandlesLargeText()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC_008_BodyAreaHandlesLargeText()[pri:8, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:31:15 IST" name="TC_008_BodyAreaHandlesLargeText" description="TC_008 | Verify Body area handles very large text (10,000+ chars) without crash or freeze" finished-at="2026-07-01T07:31:38 IST" duration-ms="22921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_008_BodyAreaHandlesLargeText -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:31:38 IST" name="tearDown" finished-at="2026-07-01T07:31:38 IST" duration-ms="304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_008_BodyAreaHandlesLargeText status=SUCCESS method=SecretLinkTest.TC_008_BodyAreaHandlesLargeText()[pri:8, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:31:38 IST" name="setUp" finished-at="2026-07-01T07:32:04 IST" duration-ms="25708" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage(java.lang.reflect.Method)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:32:04 IST" name="initPage" finished-at="2026-07-01T07:32:04 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.messagespectrum.tests.SecretLinkTest.TC_009_ExpiryDropdownContainsAllOptions()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC_009_ExpiryDropdownContainsAllOptions()[pri:9, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:32:04 IST" name="TC_009_ExpiryDropdownContainsAllOptions" description="TC_009 | Verify &#039;Expires In&#039; dropdown contains all expected time options" finished-at="2026-07-01T07:32:04 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_009_ExpiryDropdownContainsAllOptions -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:32:04 IST" name="tearDown" finished-at="2026-07-01T07:32:04 IST" duration-ms="198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_009_ExpiryDropdownContainsAllOptions status=SUCCESS method=SecretLinkTest.TC_009_ExpiryDropdownContainsAllOptions()[pri:9, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:32:04 IST" name="setUp" finished-at="2026-07-01T07:32:24 IST" duration-ms="19942" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage(java.lang.reflect.Method)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:32:24 IST" name="initPage" finished-at="2026-07-01T07:32:24 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.messagespectrum.tests.SecretLinkTest.TC_010_SelectCustomShowsInputBox()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC_010_SelectCustomShowsInputBox()[pri:10, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:32:24 IST" name="TC_010_SelectCustomShowsInputBox" description="TC_010 | Verify selecting &#039;Custom&#039; shows custom days input and accepts only 1-99" finished-at="2026-07-01T07:32:25 IST" duration-ms="1166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_010_SelectCustomShowsInputBox -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:32:25 IST" name="tearDown" finished-at="2026-07-01T07:32:26 IST" duration-ms="195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_010_SelectCustomShowsInputBox status=SUCCESS method=SecretLinkTest.TC_010_SelectCustomShowsInputBox()[pri:10, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:32:26 IST" name="setUp" finished-at="2026-07-01T07:32:48 IST" duration-ms="22776" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage(java.lang.reflect.Method)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:32:48 IST" name="initPage" finished-at="2026-07-01T07:32:48 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.messagespectrum.tests.SecretLinkTest.TC_011_CustomExpiryZeroShowsError()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC_011_CustomExpiryZeroShowsError()[pri:11, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:32:48 IST" name="TC_011_CustomExpiryZeroShowsError" description="TC_011 | Verify entering &#039;0&#039; in custom days box shows error &#039;Expiry should be greater than 0&#039;" finished-at="2026-07-01T07:32:55 IST" duration-ms="6567" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <input type="submit" name="ctl00$ContentPlaceHolder1$btnGenerateSecretLink" value="Create Secret Link*" onclick="return ValidateSecretText();" id="ctl00_ContentPlaceHolder1_btnGenerateSecretLink" class="Button" style="height:50px;width:99%;font-size: 1.2em !important;"> is not clickable at point (869, 506). Other element would receive the click: <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div>
+  (Session info: chrome=149.0.7827.197)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e2da35403e7ded7b775491c181d724e, clickElement {id=f.C3007322BF6F7461D33F5933DB12B3F7.d.E7752539BC597DE146F858420A7339E3.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\anike\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50140}, goog:processID: 10004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50140/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8e2da35403e7ded7b775491c181d724e)] -> id: ctl00_ContentPlaceHolder1_btnGenerateSecretLink]
+Session ID: 8e2da35403e7ded7b775491c181d724e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="submit" name="ctl00$ContentPlaceHolder1$btnGenerateSecretLink" value="Create Secret Link*" onclick="return ValidateSecretText();" id="ctl00_ContentPlaceHolder1_btnGenerateSecretLink" class="Button" style="height:50px;width:99%;font-size: 1.2em !important;"> is not clickable at point (869, 506). Other element would receive the click: <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div>
+  (Session info: chrome=149.0.7827.197)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e2da35403e7ded7b775491c181d724e, clickElement {id=f.C3007322BF6F7461D33F5933DB12B3F7.d.E7752539BC597DE146F858420A7339E3.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\anike\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50140}, goog:processID: 10004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50140/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8e2da35403e7ded7b775491c181d724e)] -> id: ctl00_ContentPlaceHolder1_btnGenerateSecretLink]
+Session ID: 8e2da35403e7ded7b775491c181d724e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at com.messagespectrum.pages.SecretLinkPage.clickGenerateSecretLink(SecretLinkPage.java:281)
+at com.messagespectrum.tests.SecretLinkTest.TC_011_CustomExpiryZeroShowsError(SecretLinkTest.java:582)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_011_CustomExpiryZeroShowsError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:32:55 IST" name="tearDown" finished-at="2026-07-01T07:32:55 IST" duration-ms="429" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_011_CustomExpiryZeroShowsError status=FAILURE method=SecretLinkTest.TC_011_CustomExpiryZeroShowsError()[pri:11, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:32:55 IST" name="setUp" finished-at="2026-07-01T07:33:19 IST" duration-ms="23799" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage(java.lang.reflect.Method)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:33:19 IST" name="initPage" finished-at="2026-07-01T07:33:19 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.messagespectrum.tests.SecretLinkTest.TC_013_DefaultExpiryIsPreSelected()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC_013_DefaultExpiryIsPreSelected()[pri:13, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:33:19 IST" name="TC_013_DefaultExpiryIsPreSelected" description="TC_013 | Verify &#039;Expires In&#039; dropdown has &#039;7&#039; days pre-selected by default on page load" finished-at="2026-07-01T07:33:19 IST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_013_DefaultExpiryIsPreSelected -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:33:19 IST" name="tearDown" finished-at="2026-07-01T07:33:19 IST" duration-ms="203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_013_DefaultExpiryIsPreSelected status=SUCCESS method=SecretLinkTest.TC_013_DefaultExpiryIsPreSelected()[pri:13, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:33:19 IST" name="setUp" finished-at="2026-07-01T07:33:42 IST" duration-ms="22592" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage(java.lang.reflect.Method)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:33:42 IST" name="initPage" finished-at="2026-07-01T07:33:42 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.messagespectrum.tests.SecretLinkTest.TC_017_WarningMessageWhenMultipleViewsUnchecked()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC_017_WarningMessageWhenMultipleViewsUnchecked()[pri:17, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:33:42 IST" name="TC_017_WarningMessageWhenMultipleViewsUnchecked" description="TC_017 | Verify message &#039;* You able to use this link once.&#039; shown when Multiple Views unchecked" finished-at="2026-07-01T07:33:42 IST" duration-ms="152" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Warning message should be exactly '* You able to use this link once.' Actual: * You will be able to use this link only once. expected [* You able to use this link once.] but found [* You will be able to use this link only once.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Warning message should be exactly '* You able to use this link once.' Actual: * You will be able to use this link only once. expected [* You able to use this link once.] but found [* You will be able to use this link only once.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.messagespectrum.tests.SecretLinkTest.TC_017_WarningMessageWhenMultipleViewsUnchecked(SecretLinkTest.java:638)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_017_WarningMessageWhenMultipleViewsUnchecked -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:33:42 IST" name="tearDown" finished-at="2026-07-01T07:33:43 IST" duration-ms="358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_017_WarningMessageWhenMultipleViewsUnchecked status=FAILURE method=SecretLinkTest.TC_017_WarningMessageWhenMultipleViewsUnchecked()[pri:17, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:33:43 IST" name="setUp" finished-at="2026-07-01T07:34:08 IST" duration-ms="24966" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage(java.lang.reflect.Method)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:34:08 IST" name="initPage" finished-at="2026-07-01T07:34:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.messagespectrum.tests.SecretLinkTest.TC_018_WarningMessageWhenMultipleViewsChecked()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC_018_WarningMessageWhenMultipleViewsChecked()[pri:18, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:34:08 IST" name="TC_018_WarningMessageWhenMultipleViewsChecked" description="TC_018 | Verify message &#039;* You will be able to use this link multiple times until expiry duration.&#039; shown when Multiple Views checked" finished-at="2026-07-01T07:34:08 IST" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_018_WarningMessageWhenMultipleViewsChecked -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed]" started-at="2026-07-01T07:34:08 IST" name="tearDown" finished-at="2026-07-01T07:34:08 IST" duration-ms="236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_018_WarningMessageWhenMultipleViewsChecked status=SUCCESS method=SecretLinkTest.TC_018_WarningMessageWhenMultipleViewsChecked()[pri:18, instance:com.messagespectrum.tests.SecretLinkTest@19bb07ed] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.messagespectrum.tests.SecretLinkTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

@@ -1,0 +1,4 @@
+com\messagespectrum\pages\SecretLinkPage.class
+com\messagespectrum\base\BaseTest.class
+com\messagespectrum\utilities\ExtentManager.class
+com\messagespectrum\tests\SecretLinkTest.class

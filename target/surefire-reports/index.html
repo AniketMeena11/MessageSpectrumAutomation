@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">13 methods, 4 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.messagespectrum.tests.SecretLinkTest" class="method navigator-link" hash-for-method="TC_004_AutoGeneratedPasswordWorksWithLinkFlow">TC_004_AutoGeneratedPasswordWorksWithLinkFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.messagespectrum.tests.SecretLinkTest" class="method navigator-link" hash-for-method="TC_006_BodyAreaAcceptsSpecialCharsAndEmoji">TC_006_BodyAreaAcceptsSpecialCharsAndEmoji</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.messagespectrum.tests.SecretLinkTest" class="method navigator-link" hash-for-method="TC_011_CustomExpiryZeroShowsError">TC_011_CustomExpiryZeroShowsError</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.messagespectrum.tests.SecretLinkTest" class="method navigator-link" hash-for-method="TC_017_WarningMessageWhenMultipleViewsUnchecked">TC_017_WarningMessageWhenMultipleViewsUnchecked</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.messagespectrum.tests.SecretLinkTest" class="method navigator-link" hash-for-method="TC_001_GeneratePassword">TC_001_GeneratePassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.messagespectrum.tests.SecretLinkTest" class="method navigator-link" hash-for-method="TC_002_EachClickGeneratesDifferentPassword">TC_002_EachClickGeneratesDifferentPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.messagespectrum.tests.SecretLinkTest" class="method navigator-link" hash-for-method="TC_003_GeneratedPasswordMeetsSecurityStandards">TC_003_GeneratedPasswordMeetsSecurityStandards</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.messagespectrum.tests.SecretLinkTest" class="method navigator-link" hash-for-method="TC_005_BodyAreaAcceptsText">TC_005_BodyAreaAcceptsText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.messagespectrum.tests.SecretLinkTest" class="method navigator-link" hash-for-method="TC_008_BodyAreaHandlesLargeText">TC_008_BodyAreaHandlesLargeText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.messagespectrum.tests.SecretLinkTest" class="method navigator-link" hash-for-method="TC_009_ExpiryDropdownContainsAllOptions">TC_009_ExpiryDropdownContainsAllOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.messagespectrum.tests.SecretLinkTest" class="method navigator-link" hash-for-method="TC_010_SelectCustomShowsInputBox">TC_010_SelectCustomShowsInputBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.messagespectrum.tests.SecretLinkTest" class="method navigator-link" hash-for-method="TC_013_DefaultExpiryIsPreSelected">TC_013_DefaultExpiryIsPreSelected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.messagespectrum.tests.SecretLinkTest" class="method navigator-link" hash-for-method="TC_018_WarningMessageWhenMultipleViewsChecked">TC_018_WarningMessageWhenMultipleViewsChecked</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.messagespectrum.tests.SecretLinkTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_004_AutoGeneratedPasswordWorksWithLinkFlow">
+                  </a> <!-- TC_004_AutoGeneratedPasswordWorksWithLinkFlow -->
+                  <span class="method-name">TC_004_AutoGeneratedPasswordWorksWithLinkFlow</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;submit&quot; name=&quot;ctl00$ContentPlaceHolder1$btnGenerateSecretLink&quot; value=&quot;Create Secret Link*&quot; onclick=&quot;return ValidateSecretText();&quot; id=&quot;ctl00_ContentPlaceHolder1_btnGenerateSecretLink&quot; class=&quot;Button&quot; style=&quot;height:50px;width:99%;font-size: 1.2em !important;&quot;&gt; is not clickable at point (869, 506). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=149.0.7827.197)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7680c95977cfd7762e689631c106d9e2, clickElement {id=f.81BC1DA3F6A0CAD02EF7418B61CF6809.d.0F914B998CAE2DAB35D4F5E41EADF2E9.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\anike\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54348}, goog:processID: 24156, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54348/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7680c95977cfd7762e689631c106d9e2)] -&gt; id: ctl00_ContentPlaceHolder1_btnGenerateSecretLink]
+Session ID: 7680c95977cfd7762e689631c106d9e2
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.messagespectrum.pages.SecretLinkPage.clickGenerateSecretLink(SecretLinkPage.java:281)
+	at com.messagespectrum.tests.SecretLinkTest.TC_004_AutoGeneratedPasswordWorksWithLinkFlow(SecretLinkTest.java:455)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_004 | Verify auto-generated password works correctly with Generate Link with Password flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_006_BodyAreaAcceptsSpecialCharsAndEmoji">
+                  </a> <!-- TC_006_BodyAreaAcceptsSpecialCharsAndEmoji -->
+                  <span class="method-name">TC_006_BodyAreaAcceptsSpecialCharsAndEmoji</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: ChromeDriver only supports characters in the BMP
+  (Session info: chrome=149.0.7827.197)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4faacd9aa59fe2fc6b8e921333fdb6c, sendKeysToElement {id=f.7A44141964B6C7806DAD314ED9558080.d.35F64146357B74EE404F380E801293C3.e.13, value=[Ljava.lang.CharSequence;@13ed066e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\anike\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63699}, goog:processID: 12044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63699/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f4faacd9aa59fe2fc6b8e921333fdb6c)] -&gt; id: ctl00_ContentPlaceHolder1_txtSecretText]
+Session ID: f4faacd9aa59fe2fc6b8e921333fdb6c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+	at com.messagespectrum.pages.SecretLinkPage.enterBodyText(SecretLinkPage.java:136)
+	at com.messagespectrum.tests.SecretLinkTest.TC_006_BodyAreaAcceptsSpecialCharsAndEmoji(SecretLinkTest.java:155)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_006 | Verify Body area accepts special characters and emoji without encoding error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_011_CustomExpiryZeroShowsError">
+                  </a> <!-- TC_011_CustomExpiryZeroShowsError -->
+                  <span class="method-name">TC_011_CustomExpiryZeroShowsError</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;submit&quot; name=&quot;ctl00$ContentPlaceHolder1$btnGenerateSecretLink&quot; value=&quot;Create Secret Link*&quot; onclick=&quot;return ValidateSecretText();&quot; id=&quot;ctl00_ContentPlaceHolder1_btnGenerateSecretLink&quot; class=&quot;Button&quot; style=&quot;height:50px;width:99%;font-size: 1.2em !important;&quot;&gt; is not clickable at point (869, 506). Other element would receive the click: &lt;div style=&quot;width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=149.0.7827.197)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e2da35403e7ded7b775491c181d724e, clickElement {id=f.C3007322BF6F7461D33F5933DB12B3F7.d.E7752539BC597DE146F858420A7339E3.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.197, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\anike\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50140}, goog:processID: 10004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50140/devtoo..., se:cdpVersion: 149.0.7827.197, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8e2da35403e7ded7b775491c181d724e)] -&gt; id: ctl00_ContentPlaceHolder1_btnGenerateSecretLink]
+Session ID: 8e2da35403e7ded7b775491c181d724e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.messagespectrum.pages.SecretLinkPage.clickGenerateSecretLink(SecretLinkPage.java:281)
+	at com.messagespectrum.tests.SecretLinkTest.TC_011_CustomExpiryZeroShowsError(SecretLinkTest.java:582)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_011 | Verify entering '0' in custom days box shows error 'Expiry should be greater than 0')                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_017_WarningMessageWhenMultipleViewsUnchecked">
+                  </a> <!-- TC_017_WarningMessageWhenMultipleViewsUnchecked -->
+                  <span class="method-name">TC_017_WarningMessageWhenMultipleViewsUnchecked</span>
+                  <div class="stack-trace">java.lang.AssertionError: Warning message should be exactly &apos;* You able to use this link once.&apos; Actual: * You will be able to use this link only once. expected [* You able to use this link once.] but found [* You will be able to use this link only once.]
+	at com.messagespectrum.tests.SecretLinkTest.TC_017_WarningMessageWhenMultipleViewsUnchecked(SecretLinkTest.java:638)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_017 | Verify message '* You able to use this link once.' shown when Multiple Views unchecked)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.messagespectrum.tests.SecretLinkTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_001_GeneratePassword">
+                  </a> <!-- TC_001_GeneratePassword -->
+                  <span class="method-name">TC_001_GeneratePassword</span>
+                  <em>
+(TC_001 | Verify clicking Generate Password fills the body area with a password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_002_EachClickGeneratesDifferentPassword">
+                  </a> <!-- TC_002_EachClickGeneratesDifferentPassword -->
+                  <span class="method-name">TC_002_EachClickGeneratesDifferentPassword</span>
+                  <em>
+(TC_002 | Verify every click on Generate Password produces a unique password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_003_GeneratedPasswordMeetsSecurityStandards">
+                  </a> <!-- TC_003_GeneratedPasswordMeetsSecurityStandards -->
+                  <span class="method-name">TC_003_GeneratedPasswordMeetsSecurityStandards</span>
+                  <em>
+(TC_003 | Verify auto-generated password meets basic security standards)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_005_BodyAreaAcceptsText">
+                  </a> <!-- TC_005_BodyAreaAcceptsText -->
+                  <span class="method-name">TC_005_BodyAreaAcceptsText</span>
+                  <em>
+(TC_005 | Verify user can type secret content into Body area and it is visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_008_BodyAreaHandlesLargeText">
+                  </a> <!-- TC_008_BodyAreaHandlesLargeText -->
+                  <span class="method-name">TC_008_BodyAreaHandlesLargeText</span>
+                  <em>
+(TC_008 | Verify Body area handles very large text (10,000+ chars) without crash or freeze)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_009_ExpiryDropdownContainsAllOptions">
+                  </a> <!-- TC_009_ExpiryDropdownContainsAllOptions -->
+                  <span class="method-name">TC_009_ExpiryDropdownContainsAllOptions</span>
+                  <em>
+(TC_009 | Verify 'Expires In' dropdown contains all expected time options)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_010_SelectCustomShowsInputBox">
+                  </a> <!-- TC_010_SelectCustomShowsInputBox -->
+                  <span class="method-name">TC_010_SelectCustomShowsInputBox</span>
+                  <em>
+(TC_010 | Verify selecting 'Custom' shows custom days input and accepts only 1-99)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_013_DefaultExpiryIsPreSelected">
+                  </a> <!-- TC_013_DefaultExpiryIsPreSelected -->
+                  <span class="method-name">TC_013_DefaultExpiryIsPreSelected</span>
+                  <em>
+(TC_013 | Verify 'Expires In' dropdown has '7' days pre-selected by default on page load)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_018_WarningMessageWhenMultipleViewsChecked">
+                  </a> <!-- TC_018_WarningMessageWhenMultipleViewsChecked -->
+                  <span class="method-name">TC_018_WarningMessageWhenMultipleViewsChecked</span>
+                  <em>
+(TC_018 | Verify message '* You will be able to use this link multiple times until expiry duration.' shown when Multiple Views checked)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.messagespectrum.base.BaseTest&quot;/&gt;
+      &lt;class name=&quot;com.messagespectrum.tests.SecretLinkTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(13);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC_008_BodyAreaHandlesLargeText')
+data.setCell(0, 2, 'com.messagespectrum.tests.SecretLinkTest')
+data.setCell(0, 3, 22921);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC_002_EachClickGeneratesDifferentPassword')
+data.setCell(1, 2, 'com.messagespectrum.tests.SecretLinkTest')
+data.setCell(1, 3, 21045);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC_011_CustomExpiryZeroShowsError')
+data.setCell(2, 2, 'com.messagespectrum.tests.SecretLinkTest')
+data.setCell(2, 3, 6567);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC_004_AutoGeneratedPasswordWorksWithLinkFlow')
+data.setCell(3, 2, 'com.messagespectrum.tests.SecretLinkTest')
+data.setCell(3, 3, 6328);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC_010_SelectCustomShowsInputBox')
+data.setCell(4, 2, 'com.messagespectrum.tests.SecretLinkTest')
+data.setCell(4, 3, 1166);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC_001_GeneratePassword')
+data.setCell(5, 2, 'com.messagespectrum.tests.SecretLinkTest')
+data.setCell(5, 3, 1082);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC_003_GeneratedPasswordMeetsSecurityStandards')
+data.setCell(6, 2, 'com.messagespectrum.tests.SecretLinkTest')
+data.setCell(6, 3, 917);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC_018_WarningMessageWhenMultipleViewsChecked')
+data.setCell(7, 2, 'com.messagespectrum.tests.SecretLinkTest')
+data.setCell(7, 3, 409);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC_005_BodyAreaAcceptsText')
+data.setCell(8, 2, 'com.messagespectrum.tests.SecretLinkTest')
+data.setCell(8, 3, 394);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC_006_BodyAreaAcceptsSpecialCharsAndEmoji')
+data.setCell(9, 2, 'com.messagespectrum.tests.SecretLinkTest')
+data.setCell(9, 3, 292);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TC_009_ExpiryDropdownContainsAllOptions')
+data.setCell(10, 2, 'com.messagespectrum.tests.SecretLinkTest')
+data.setCell(10, 3, 198);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TC_013_DefaultExpiryIsPreSelected')
+data.setCell(11, 2, 'com.messagespectrum.tests.SecretLinkTest')
+data.setCell(11, 3, 161);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TC_017_WarningMessageWhenMultipleViewsUnchecked')
+data.setCell(12, 2, 'com.messagespectrum.tests.SecretLinkTest')
+data.setCell(12, 3, 152);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.messagespectrum.tests.SecretLinkTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">flushReport</span>
+                <br/>
+                <span class="ignored-method-name">setUpReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.messagespectrum.base.BaseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUpReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.messagespectrum.tests.SecretLinkTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">359 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage(public void com.messagespectrum.tests.SecretLinkTest.TC_001_GeneratePassword())</span>
+                <span class="method-start">31223 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_001_GeneratePassword</span>
+                <span class="method-start">31325 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC_001_GeneratePassword status=SUCCESS method=SecretLinkTest.TC_001_GeneratePasswor...)</span>
+                <span class="method-start">32412 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">32714 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage(public void com.messagespectrum.tests.SecretLinkTest.TC_002_EachClickGeneratesDifferentPassword())</span>
+                <span class="method-start">34836 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_002_EachClickGeneratesDifferentPassword</span>
+                <span class="method-start">34840 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC_002_EachClickGeneratesDifferentPassword status=SUCCESS method=SecretLinkTest.TC_...)</span>
+                <span class="method-start">55886 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">56150 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage(public void com.messagespectrum.tests.SecretLinkTest.TC_003_GeneratedPasswordMeetsSecurityStandards(...)</span>
+                <span class="method-start">75898 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_003_GeneratedPasswordMeetsSecurityStandards</span>
+                <span class="method-start">75900 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC_003_GeneratedPasswordMeetsSecurityStandards status=SUCCESS method=SecretLinkTest...)</span>
+                <span class="method-start">76819 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">77013 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage(public void com.messagespectrum.tests.SecretLinkTest.TC_004_AutoGeneratedPasswordWorksWithLinkFlow())</span>
+                <span class="method-start">99355 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_004_AutoGeneratedPasswordWorksWithLinkFlow</span>
+                <span class="method-start">99357 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC_004_AutoGeneratedPasswordWorksWithLinkFlow status=FAILURE method=SecretLinkTest....)</span>
+                <span class="method-start">105698 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">107787 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage(public void com.messagespectrum.tests.SecretLinkTest.TC_005_BodyAreaAcceptsText())</span>
+                <span class="method-start">129057 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_005_BodyAreaAcceptsText</span>
+                <span class="method-start">129058 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC_005_BodyAreaAcceptsText status=SUCCESS method=SecretLinkTest.TC_005_BodyAreaAcce...)</span>
+                <span class="method-start">129453 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">129656 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage(public void com.messagespectrum.tests.SecretLinkTest.TC_006_BodyAreaAcceptsSpecialCharsAndEmoji())</span>
+                <span class="method-start">151109 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_006_BodyAreaAcceptsSpecialCharsAndEmoji</span>
+                <span class="method-start">151111 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC_006_BodyAreaAcceptsSpecialCharsAndEmoji status=FAILURE method=SecretLinkTest.TC_...)</span>
+                <span class="method-start">151406 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">151820 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage(public void com.messagespectrum.tests.SecretLinkTest.TC_008_BodyAreaHandlesLargeText())</span>
+                <span class="method-start">173465 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_008_BodyAreaHandlesLargeText</span>
+                <span class="method-start">173469 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC_008_BodyAreaHandlesLargeText status=SUCCESS method=SecretLinkTest.TC_008_BodyAre...)</span>
+                <span class="method-start">196392 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">196697 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage(public void com.messagespectrum.tests.SecretLinkTest.TC_009_ExpiryDropdownContainsAllOptions())</span>
+                <span class="method-start">222405 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_009_ExpiryDropdownContainsAllOptions</span>
+                <span class="method-start">222407 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC_009_ExpiryDropdownContainsAllOptions status=SUCCESS method=SecretLinkTest.TC_009...)</span>
+                <span class="method-start">222606 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">222805 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage(public void com.messagespectrum.tests.SecretLinkTest.TC_010_SelectCustomShowsInputBox())</span>
+                <span class="method-start">242747 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_010_SelectCustomShowsInputBox</span>
+                <span class="method-start">242749 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC_010_SelectCustomShowsInputBox status=SUCCESS method=SecretLinkTest.TC_010_Select...)</span>
+                <span class="method-start">243915 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">244111 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage(public void com.messagespectrum.tests.SecretLinkTest.TC_011_CustomExpiryZeroShowsError())</span>
+                <span class="method-start">266887 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_011_CustomExpiryZeroShowsError</span>
+                <span class="method-start">266889 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC_011_CustomExpiryZeroShowsError status=FAILURE method=SecretLinkTest.TC_011_Custo...)</span>
+                <span class="method-start">273460 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">273889 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage(public void com.messagespectrum.tests.SecretLinkTest.TC_013_DefaultExpiryIsPreSelected())</span>
+                <span class="method-start">297689 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_013_DefaultExpiryIsPreSelected</span>
+                <span class="method-start">297691 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC_013_DefaultExpiryIsPreSelected status=SUCCESS method=SecretLinkTest.TC_013_Defau...)</span>
+                <span class="method-start">297853 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">298058 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage(public void com.messagespectrum.tests.SecretLinkTest.TC_017_WarningMessageWhenMultipleViewsUnchecked...)</span>
+                <span class="method-start">320651 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_017_WarningMessageWhenMultipleViewsUnchecked</span>
+                <span class="method-start">320653 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC_017_WarningMessageWhenMultipleViewsUnchecked status=FAILURE method=SecretLinkTes...)</span>
+                <span class="method-start">320807 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">321165 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage(public void com.messagespectrum.tests.SecretLinkTest.TC_018_WarningMessageWhenMultipleViewsChecked())</span>
+                <span class="method-start">346131 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_018_WarningMessageWhenMultipleViewsChecked</span>
+                <span class="method-start">346133 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC_018_WarningMessageWhenMultipleViewsChecked status=SUCCESS method=SecretLinkTest....)</span>
+                <span class="method-start">346542 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.messagespectrum.base.BaseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">flushReport</span>
+                <span class="method-start">346836 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
